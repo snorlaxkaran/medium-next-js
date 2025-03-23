@@ -14,7 +14,7 @@ const Blogs = () => {
   const [blogs, setBlogs] = useState<BlogsProps[]>([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/api/posts").then((data) => {
+    axios.get("https://medium-karan.vercel.app/api/posts").then((data) => {
       setBlogs(data.data);
     });
   }, []);

@@ -27,7 +27,7 @@ const SignUpPageComponent = () => {
       <button
         onClick={async () => {
           try {
-            await axios.post("http://localhost:3000/api/signup", {
+            await axios.post("https://medium-karan.vercel.app/api/signup", {
               username,
               password,
             });

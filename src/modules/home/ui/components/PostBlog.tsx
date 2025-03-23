@@ -59,10 +59,13 @@ const PostBlog = () => {
                 type="submit"
                 onClick={async () => {
                   try {
-                    await axios.post("http://localhost:3000/api/posts", {
-                      title,
-                      content,
-                    });
+                    await axios.post(
+                      "https://medium-karan.vercel.app/api/posts",
+                      {
+                        title,
+                        content,
+                      }
+                    );
 
                     window.location.reload();
                   } catch (error) {
